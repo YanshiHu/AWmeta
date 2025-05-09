@@ -3,7 +3,7 @@
 </p>
 
 
-[![stars-badge](https://img.shields.io/github/stars/YanshiHu/CoGO)](https://github.com/YanshiHu/AWmeta/stargazers)
+[![stars-badge](https://img.shields.io/github/stars/YanshiHu/AWmeta)](https://github.com/YanshiHu/AWmeta/stargazers)
 ![](https://img.shields.io/badge/language-R4.1.0-orange.svg)
 ![](https://img.shields.io/badge/environment-conda-blue.svg)
 ![](https://img.shields.io/badge/verison-1.0.0-ff69b4.svg)
