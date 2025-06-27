@@ -95,16 +95,17 @@ Arguments:
 					Applies this method to all studies.
 				  - Two Methods (length 2): e.g., `c("limma", "DESeq2")`. 
 					Provide one continuous method ("limma", "sam") for microarray
-					data and one discrete method ("edgeR", "DESeq2", "limmaVoom") for
-					RNA-seq data. The function will auto-detect if a study's data is
-					integer-based (discrete) or decimal-based (continuous) and apply
-					the corresponding method.
-       compare.group 		A character vector of length 2 specifying the names of the two groups to
-				compare in the clinical/phenotype data (e.g., c("control", "PD")).
-       ref.level 		A character string specifying which one of the two groups in `compare.group`
-				is the reference level (e.g., "control").
+					data and one discrete method ("edgeR", "DESeq2", "limmaVoom")
+					for RNA-seq data. The function will auto-detect if a study's
+					data is integer-based (discrete) or decimal-based (continuous)
+     					and apply the corresponding method.
+       compare.group 		A character vector of length 2 specifying the names of the two groups
+				to compare in the clinical/phenotype data (e.g., c("control", "PD")).
+       ref.level 		A character string specifying which one of the two groups in
+				`compare.group` is the reference level (e.g., "control").
        paired 			A logical value (TRUE/FALSE) indicating whether the samples are paired.
-       core.num 		An integer specifying the number of CPU cores to use for parallel computation.
+       core.num 		An integer specifying the number of CPU cores to use for parallel
+				computation.
 ```
 
 
