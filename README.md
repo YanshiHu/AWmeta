@@ -82,7 +82,7 @@ devtools::install_github("metaOmics/MetaDE")
 source("AWmeta.R")
 ```
 #### 2. Run following command to do adaptively-weighted transcriptomic meta-analysis ([step-by-step tutorial](https://github.com/YanshiHu/AWmeta/blob/main/AWmeta_demo.ipynb)):
-```R
+```text
 AWmeta(raw.data.dir, raw.clin.dir, raw.sep, DE.method, compare.group, ref.level, paired, core.num)
 
 Arguments:
