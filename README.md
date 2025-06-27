@@ -14,8 +14,10 @@
 
 ## **[<b>AWmeta</b>](https://github.com/YanshiHu/AWmeta) ([<ins><b>A</b></ins>](https://github.com/YanshiHu/AWmeta)daptively-[<ins><b>W</b></ins>](https://github.com/YanshiHu/AWmeta)eighted transcriptomic [<ins><b>meta</b></ins>](https://github.com/YanshiHu/AWmeta)-analysis, [ɔːˈmɛtə])**
 
+<!--
 > [!IMPORTANT]
 > We will release scripts soon, please stay tuned. :)
+-->
 
 <p align="justify">
 Transcriptomic meta-analysis enhances biological veracity and reproducibility by integrating diverse studies, yet prevailing <i>P</i>-value or effect-size integration approaches exhibit limited power to resolve subtle signatures. We present AWmeta, an adaptively-weighted framework unifying both paradigms. Benchmarking across 35 Parkinson's and Crohn's disease datasets spanning diverse tissues and adaptively down-weighting underpowered studies, AWmeta yields higher-fidelity differentially expressed genes (DEGs) with markedly reduced false positives, and establishes superior gene differential quantification convergence at both gene and study levels over state-of-the-art random-effects model (REM) and original studies. AWmeta requires fewer samples and DEGs from original studies to achieve substantial gene differential estimates, lowering experimental costs. We demonstrates AWmeta's remarkable stability and robustness against external and internal perturbations. Crucially, AWmeta prioritizes disease tissue-specific mechanisms with higher functional coherence than those from REM and original studies. By bridging statistical rigor with mechanistic interpretability, AWmeta harmonizes heterogeneous transcriptomic data into actionable insights, serving as a transformative tool for precision transcriptomic integration.
@@ -79,36 +81,23 @@ devtools::install_github("metaOmics/MetaDE")
 ```R
 source("AWmeta.R")
 ```
-#### 2. Run following command to do adaptively-weighted transcriptomic meta-analysis ([step-by-step tutorial](https://github.com/YanshiHu/AWmeta/AWmeta_demo.ipynb)):
+#### 2. Run following command to do adaptively-weighted transcriptomic meta-analysis ([step-by-step tutorial](https://github.com/YanshiHu/AWmeta/blob/main/AWmeta_demo.ipynb)):
 ```R
-AWmeta(raw.data.dir, raw.clin.dir, raw.sep, DE.method, compare.group, ref.level, 
-	   paired, core.num)
+AWmeta(raw.data.dir, raw.clin.dir, raw.sep, DE.method, compare.group, ref.level, paired, core.num)
 
 Arguments:
-       raw.data.dir			A path to the raw expression data files.
-       raw.clin.dir			A path to the clinical/phenotype data files.
-       raw.sep				A field separator character. Values on each line of the raw 
-       						expression and clinical/phenotype data file are separated by
-                        	this character.
-       DE.method			A character vector specifying the DE analysis method(s).
-							- Single Method (length 1): e.g., `"limma"`. 
-							  		Applies this method to all studies.
-							- Two Methods (length 2): e.g., `c("limma", "DESeq2")`. 
-							  		Provide one continuous method ("limma", "sam") for 
-							  		microarray data and one discrete method ("edgeR", 
-							  		"DESeq2", "limmaVoom") for RNA-seq data. The function
-                                    will auto-detect if a study's data is integer-based
-                                    (discrete) or decimal-based (continuous) and apply
-                                    the corresponding method.
-       compare.group 		A character vector of length 2 specifying the names of the two
-       						groups to compare in the clinical/phenotype data (e.g., 
-       						c("control", "PD")).
-       ref.level 			A character string specifying which one of the two groups in 
-       						`compare.group` is the reference level (e.g., "control").
-       paired 				A logical value (TRUE/FALSE) indicating whether the samples are
-       						paired.
-       core.num 			An integer specifying the number of CPU cores to use for 
-       						parallel computation.
+       raw.data.dir		A path to the raw expression data files.
+       raw.clin.dir		A path to the clinical/phenotype data files.
+       raw.sep			A field separator character. Values on each line of the raw expression and clinical/phenotype data file are separated by this character.
+       DE.method		A character vector specifying the DE analysis method(s).
+						- Single Method (length 1): e.g., `"limma"`. 
+							Applies this method to all studies.
+						- Two Methods (length 2): e.g., `c("limma", "DESeq2")`. 
+							Provide one continuous method ("limma", "sam") for microarray data and one discrete method ("edgeR", "DESeq2", "limmaVoom") for RNA-seq data. The function will auto-detect if a study's data is integer-based (discrete) or decimal-based (continuous) and apply the corresponding method.
+       compare.group 	A character vector of length 2 specifying the names of the two groups to compare in the clinical/phenotype data (e.g., c("control", "PD")).
+       ref.level 		A character string specifying which one of the two groups in `compare.group` is the reference level (e.g., "control").
+       paired 			A logical value (TRUE/FALSE) indicating whether the samples are paired.
+       core.num 		An integer specifying the number of CPU cores to use for parallel computation.
 ```
 
 
