@@ -90,11 +90,11 @@ Arguments:
        raw.clin.dir		A path to the clinical/phenotype data files.
        raw.sep			A field separator character. Values on each line of the raw expression and clinical/phenotype data file are separated by this character.
        DE.method		A character vector specifying the DE analysis method(s).
-						- Single Method (length 1): e.g., `"limma"`. 
-							Applies this method to all studies.
-						- Two Methods (length 2): e.g., `c("limma", "DESeq2")`. 
+				  - Single Method (length 1): e.g., `"limma"`. 
+						Applies this method to all studies.
+				  - Two Methods (length 2): e.g., `c("limma", "DESeq2")`. 
 							Provide one continuous method ("limma", "sam") for microarray data and one discrete method ("edgeR", "DESeq2", "limmaVoom") for RNA-seq data. The function will auto-detect if a study's data is integer-based (discrete) or decimal-based (continuous) and apply the corresponding method.
-       compare.group 	A character vector of length 2 specifying the names of the two groups to compare in the clinical/phenotype data (e.g., c("control", "PD")).
+       compare.group 		A character vector of length 2 specifying the names of the two groups to compare in the clinical/phenotype data (e.g., c("control", "PD")).
        ref.level 		A character string specifying which one of the two groups in `compare.group` is the reference level (e.g., "control").
        paired 			A logical value (TRUE/FALSE) indicating whether the samples are paired.
        core.num 		An integer specifying the number of CPU cores to use for parallel computation.
