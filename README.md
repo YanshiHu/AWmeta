@@ -23,12 +23,12 @@ Transcriptomic meta-analysis enhances biological veracity and reproducibility by
 </p>
 
 
-## 🗺️ Overview
+## 🗺️Overview
 
 <img src="AWmeta_methodology.jpg" width="850">
 
 
-## ⚙️ Installation
+## ⚙️Installation
 
 ### :one: Download AWmeta repo
 Clone this repository and rename to your project name.
@@ -74,7 +74,7 @@ devtools::install_github("metaOmics/MetaDE")
 ```
 
 
-## 🛠 Usage
+## 🛠Usage
 
 #### 1. Load AWmeta method:
 ```R
@@ -108,14 +108,14 @@ Arguments:
 ```
 
 
-## ✍️ Citation
+## ✍️Citation
 
 **To cite AWmeta:**
 
 <ins>Yanshi Hu</ins><sup>$</sup>, Zixuan Wang, Yueming Hu, Cong Feng, Qiuyu Fang, Ming Chen<sup>$</sup> (2025). [AWmeta empowers adaptively-weighted transcriptomic meta-analysis](https://doi.org/10.1101/2025.05.06.650408). <i><b>bio<span style="color:#ff0000;">R</span>&chi;iv</b></i>, 2025.05.06.650408.
 
 
-## 😵 Issues
+## 😵Issues
 
 If you have any questions or thoughts, please feel free to  [file an issue](https://github.com/YanshiHu/AWmeta/issues) or direct to yanshihu [at] zju [dot] edu [dot] cn.
 
