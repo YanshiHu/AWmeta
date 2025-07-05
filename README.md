@@ -23,7 +23,7 @@ Transcriptomic meta-analysis enhances biological veracity and reproducibility by
 </p>
 
 
-## Overview
+## 🗺️ Overview
 
 <img src="AWmeta_methodology.jpg" width="850">
 
