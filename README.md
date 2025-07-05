@@ -30,7 +30,7 @@ Transcriptomic meta-analysis enhances biological veracity and reproducibility by
 
 ## ⚙️Installation
 
-### :one: Download AWmeta repo
+### :one:Download AWmeta repo
 Clone this repository and rename to your project name.
 ```{bash}
 git clone https://github.com/YanshiHu/AWmeta.git
@@ -38,7 +38,7 @@ mv AWmeta my_project_name
 cd my_project_name
 ```
 
-### :two: Create a conda environment
+### :two:Create a conda environment
 #### 1. Install Miniforge/Mambaforge:
 ```sh
 wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh
@@ -60,7 +60,7 @@ mamba create -n AWmeta
 mamba activate AWmeta
 ```
 
-### :three: Set up required packages
+### :three:Set up required packages
 #### 1. Install R, AWFisher and MetaVolcanoR:
 ```sh
 mamba install conda-forge::r-base==4.1.0
