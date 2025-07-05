@@ -1,7 +1,6 @@
 <p align="center">
-  <img height="100" src="AWmeta_logo.jpg" />
+  <img src="AWmeta_logo.jpg" width="500" />
 </p>
-
 
 [![stars-badge](https://img.shields.io/github/stars/YanshiHu/AWmeta)](https://github.com/YanshiHu/AWmeta/stargazers)
 ![](https://img.shields.io/badge/language-R4.1.0-orange.svg)
